@@ -20,12 +20,12 @@ int main()
         cin >> number;
         if(number == 0 )
         {
-            numberofzeros++;
-            input.push_back(number);
+           numberofzeros++;
+           input.push_back(number);
            multiply *= 1;
         }else{
-        input.push_back(number);
-        multiply *= number;
+         input.push_back(number);
+         multiply *= number;
         }
     }
     
@@ -33,18 +33,18 @@ int main()
     {
         if(numberofzeros == 0)
         {
-        int64_t answer_number = multiply / input[j];
-        answer.push_back(answer_number);
+           int64_t answer_number = multiply / input[j];
+           answer.push_back(answer_number);
         }else if(numberofzeros == 1)
         {
             if(input[j] != 0)
             {
-                answer.push_back(0);
+              answer.push_back(0);
             }else{
-                answer.push_back(multiply);
+              answer.push_back(multiply);
             }
         }else{
-            answer.push_back(0);
+           answer.push_back(0);
         }
     }
     
@@ -52,8 +52,6 @@ int main()
     {
         cout<<*iter<<endl;   
     }
-    
-    
-    
+        
     return 0;
 }

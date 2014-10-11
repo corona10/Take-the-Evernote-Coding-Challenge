@@ -40,18 +40,14 @@ int main()
         string word;
         cin >> word;
         
-        
-        
         auto iter = word_map.find(word);
         if(iter == word_map.end())
         {
            int count = 1;
-            word_map.insert( map<string, int>::value_type(word, count));
+           word_map.insert( map<string, int>::value_type(word, count));
         }else{
            iter->second += 1;
-           
         }
-       
     }
     
     std::vector<std::pair<string, int> > vec(word_map.begin(), word_map.end());
@@ -65,11 +61,8 @@ int main()
     {
         
         cout<<top_iter->first<<endl;
-        
         top_iter++;
-    }
-    
-    
+    }    
     
     return 0;
 }
