@@ -10,10 +10,9 @@ using namespace std;
 int main()
 {
     int buffer_size = 0;
-    
     cin >> buffer_size;
-   
     std::deque<string> buffer;
+
    while(true){
         string commend;
         getline(cin, commend);
@@ -37,7 +36,7 @@ int main()
               for(auto iter = buffer.begin(); iter != buffer.end(); iter++)
              {
                   cout<<*iter<<endl;
-              }
+             }
          
       }else if(commend_category == "A")
       {

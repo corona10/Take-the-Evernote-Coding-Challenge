@@ -26,13 +26,9 @@ struct compare_pair_second {
 };
 
 int main()
-{
-    
-    
+{    
     int testcase;
-    map<string, int,  cmp> word_map;
-    
-    
+    map<string, int,  cmp> word_map;  
     cin >> testcase;
     
     for (int i =0; i < testcase; i++)
@@ -54,7 +50,6 @@ int main()
     stable_sort(vec.begin(), vec.end(), compare_pair_second<std::greater>());
     int topN;
     cin >> topN;
-    
     
     auto top_iter = vec.begin();
     for(int j =0; j < topN; j++)
